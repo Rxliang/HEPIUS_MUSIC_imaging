@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pathConfigs>
+  <!-- <dataFilePath>C:\Users\Lance.Myers\Documents\Vittamed\Data\Boston 9.16\Patients\P1\2016-0020 2016-09-26 16.43.38\output\Data</dataFilePath> -->
+   <!-- <dataFilePath>C:\Users\Lance.Myers\Documents\Vittamed\Clinical Studies\Aarau study\Aarau_RAW_data</dataFilePath> -->
+   <dataFilePath>C:\Users\Lance.Myers\Documents\Vittamed\Data\Healthy_volunteer_1_PI_multidepth_analysis\RAW_data</dataFilePath>
+</pathConfigs>

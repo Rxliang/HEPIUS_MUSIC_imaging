@@ -1,0 +1,1 @@
+setenv('BNS_SYSTEM_ID', 'vera64');

@@ -1,0 +1,117 @@
+
+hFigMain = figure(figNoIm)
+clf
+tld = tiledlayout(2,1,'TileSpacing','Compact','Padding','Compact');
+colormap(gray)
+set(gcf, 'WindowButtonDownFcn', @wbdCallback);
+set(gcf, 'position', [35  560  852 497]);
+nexttile
+
+%set(gcf, 'position', [10.0000  850.8571  852 497]);
+
+imagesc(iSet{1}.xAx_mm, iSet{1}.zAx_mm, imCompNorm(:,:,:,1));
+xlim(xlm); ylim(zlm);
+
+%imagesc(iqSet.xAx_mm, iqSet.zAx_mm, imBCDI);
+xlabel('x (mm)');
+ylabel('z (mm)');
+axis equal
+
+ind = find(flowImNorm == maxall(flowImNorm));
+[r,c] = ind2ij(ind, size(flowImNorm,1));
+r=r(1);
+c=c(1);
+r=r-20;
+x = iqSet.xAx_mm(c);
+z = iqSet.zAx_mm(r);
+wbAxes = get(gcf,'CurrentAxes');
+bbox = getbbox(x,z, wbAxes);
+elypHndl = annotation('rectangle',bbox,'EdgeColor','y','LineWidth',2.0);
+   
+while 1
+  [r(1) c]
+  r = round(r);
+  c = round(c);
+  
+  stopFlag = 0;
+  offlinesd4p9p2fn(iqSet, iqSet.IQMat, r, c);
+end
+
+
+hFigMain = figure(figNoIm)
+clf
+tld = tiledlayout(2,1,'TileSpacing','Compact','Padding','Compact');
+colormap(gray)
+set(gcf, 'WindowButtonDownFcn', @wbdCallback);
+set(gcf, 'position', [35  560  852 497]);
+nexttile
+
+%set(gcf, 'position', [10.0000  850.8571  852 497]);
+
+imagesc(iSet{1}.xAx_mm, iSet{1}.zAx_mm, imCompNorm(:,:,:,1));
+xlim(xlm); ylim(zlm);
+
+%imagesc(iqSet.xAx_mm, iqSet.zAx_mm, imBCDI);
+xlabel('x (mm)');
+ylabel('z (mm)');
+axis equal
+
+ind = find(flowImNorm == maxall(flowImNorm));
+[r,c] = ind2ij(ind, size(flowImNorm,1));
+r=r(1);
+c=c(1);
+r=r-20;
+x = iqSet.xAx_mm(c);
+z = iqSet.zAx_mm(r);
+wbAxes = get(gcf,'CurrentAxes');
+bbox = getbbox(x,z, wbAxes);
+elypHndl = annotation('rectangle',bbox,'EdgeColor','y','LineWidth',2.0);
+   
+while 1
+  [r(1) c]
+  r = round(r);
+  c = round(c);
+  
+  stopFlag = 0;
+  offlinesd4p9p2fn(iqSet, iqSet.IQMat, r, c);
+end
+
+
+hFigMain = figure(figNoIm)
+clf
+tld = tiledlayout(2,1,'TileSpacing','Compact','Padding','Compact');
+colormap(gray)
+set(gcf, 'WindowButtonDownFcn', @wbdCallback);
+set(gcf, 'position', [35  560  852 497]);
+nexttile
+
+%set(gcf, 'position', [10.0000  850.8571  852 497]);
+
+imagesc(iSet{1}.xAx_mm, iSet{1}.zAx_mm, imCompNorm(:,:,:,1));
+xlim(xlm); ylim(zlm);
+
+%imagesc(iqSet.xAx_mm, iqSet.zAx_mm, imBCDI);
+xlabel('x (mm)');
+ylabel('z (mm)');
+axis equal
+
+ind = find(flowImNorm == maxall(flowImNorm));
+[r,c] = ind2ij(ind, size(flowImNorm,1));
+r=r(1);
+c=c(1);
+r=r-20;
+x = iqSet.xAx_mm(c);
+z = iqSet.zAx_mm(r);
+wbAxes = get(gcf,'CurrentAxes');
+bbox = getbbox(x,z, wbAxes);
+elypHndl = annotation('rectangle',bbox,'EdgeColor','y','LineWidth',2.0);
+   
+while 1
+  [r(1) c]
+  r = round(r);
+  c = round(c);
+  
+  stopFlag = 0;
+  offlinesd4p9p2fn(iqSet, iqSet.IQMat, r, c);
+end
+

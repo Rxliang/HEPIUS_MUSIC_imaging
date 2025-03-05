@@ -1,0 +1,17 @@
+
+inFilePre = '20240125_195309_s1_t1_sg3_i1';
+inFilePre = '20240125_230210_s1_t1_sg1_i1';
+
+matInPath = 'C:\Users\223022005\Documents\music\data\iqdata\semaphoretest\';
+fileVersion = 1;
+overWrite = 1;
+[outFile, iSet] = readimfn(inFilePre, matInPath, fileVersion, ...
+                                     overWrite)
+
+figure(10)
+clf
+for q = 1:size(iSet.im,3);
+    imagesc(iSet.im(:,:,q))
+    drawnow
+end
+
